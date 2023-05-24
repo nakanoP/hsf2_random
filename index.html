@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/css/uikit.min.css" />
     <script>
         var charactor = ["Nリュウ","Nケン","Nガイル","Nチュンリー","Nブランカ","Nザンギエフ","N本田","Nダルシム",
                         "Dリュウ","Dケン","Dガイル","Dチュンリー","Dブランカ","Dザンギエフ","D本田","Dダルシム","Dバイソン","Dバルログ","Dサガット","Dベガ",
@@ -22,18 +22,25 @@
             return Math.floor(Math.random() * (charactor.length - 1));
         }
     </script>
+    <style>
+        span, .start {
+            font-size: 2em
+        }
+    
+    </style>
     <title>ハイパースト2 ランダムキャラセレクト</title>
 </head>
 <body>
-    <h2>ハイパースト2 ランダムキャラセレクト</h2>
-    <div>
-        <button type="submit" class="pure-button pure-button-primary" onclick="start()">START</button>
+
+    <h1 class="uk-heading-divider uk-margin-medium-left uk-margin-medium-top">ハイパースト2 ランダムキャラセレクト</h1>
+    <div class="uk-margin-medium-left uk-margin-bottom">
+        <button type="submit" class="uk-button uk-button-primary uk-button-large start" onclick="start()">START</button>
     </div>
-    <div>
-        <div>
+    <div class="uk-margin-medium-left">
+        <div class="">
             <span>プレイヤー１：</span><span id="p1"></span>
         </div>
-        <div>
+        <div class="">
             <span>プレイヤー２：</span><span id="p2"></span>
         </div>
     </div>
