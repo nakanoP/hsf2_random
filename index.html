@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <script>
+        var charactor = ["Nリュウ","Nケン","Nガイル","Nチュンリー","Nブランカ","Nザンギエフ","N本田","Nダルシム",
+                        "Dリュウ","Dケン","Dガイル","Dチュンリー","Dブランカ","Dザンギエフ","D本田","Dダルシム","Dバイソン","Dバルログ","Dサガット","Dベガ",
+                        "Tリュウ","Tケン","Tガイル","Tチュンリー","Tブランカ","Tザンギエフ","T本田","Tダルシム","Tバイソン","Tバルログ","Tサガット","Tベガ",
+                        "Sリュウ","Sケン","Sガイル","Sチュンリー","Sブランカ","Sザンギエフ","S本田","Sダルシム","Sバイソン","Sバルログ","Sサガット","Sベガ","Sホーク","Sキャミィ","Sフェイロン","Sディージェイ",
+                        "Xリュウ","Xケン","Xガイル","Xチュンリー","Xブランカ","Xザンギエフ","X本田","Xダルシム","Xバイソン","Xバルログ","Xサガット","Xベガ","Xホーク","Xキャミィ","Xフェイロン","Xディージェイ"]
+
+        function start() {
+            var p1 = document.getElementById("p1");
+            var p2 = document.getElementById("p2");
+            p1.innerText = charactor[random()];
+            p2.innerText = charactor[random()];
+        }
+
+        function random() {
+            return Math.floor(Math.random() * (charactor.length - 1));
+        }
+    </script>
+    <title>ハイパースト2 ランダムキャラセレクト</title>
+</head>
+<body>
+    <h2>ハイパースト2 ランダムキャラセレクト</h2>
+    <div>
+        <button type="submit" class="pure-button pure-button-primary" onclick="start()">START</button>
+    </div>
+    <div>
+        <div>
+            <span>プレイヤー１：</span><span id="p1"></span>
+        </div>
+        <div>
+            <span>プレイヤー２：</span><span id="p2"></span>
+        </div>
+    </div>
+</body>
+</html>
