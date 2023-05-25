@@ -26,23 +26,36 @@
         span, .start {
             font-size: 2em
         }
+
+        .chara {
+            display: inline-block;
+            height: 1.1em;
+            padding-left: 0.7em;
+        }
     
+        .footer {
+            position: absolute;
+            bottom: 1em;
+        }
     </style>
     <title>ハイパースト2 ランダムキャラセレクト</title>
 </head>
 <body>
 
-    <h1 class="uk-heading-divider uk-margin-medium-left uk-margin-medium-top">ハイパースト2 <br class="uk-hidden@s"/> ランダムキャラセレクト</h1>
+    <h2 class="uk-heading-divider uk-margin-medium-left uk-margin-medium-top">ハイパースト2 <br class="uk-hidden@s"/> ランダムキャラセレクト</h2>
     <div class="uk-margin-medium-left uk-margin-bottom">
         <button type="submit" class="uk-button uk-button-primary uk-button-large start" onclick="start()">START</button>
     </div>
     <div class="uk-margin-medium-left">
         <div class="">
-            <span>プレイヤー１：</span><br class="uk-hidden@s"/><span id="p1"></span>
+            <span>P１：</span><br class="uk-hidden@s"/><span id="p1" class="chara"></span>
         </div>
         <div class="">
-            <span>プレイヤー２：</span><br class="uk-hidden@s"/><span id="p2"></span>
+            <span>P２：</span><br class="uk-hidden@s"/><span id="p2" class="chara"></span>
         </div>
+    </div>
+    <div class="footer uk-margin-medium-left">
+        author: <a href="https://twitter.com/ufospecial" target="_blank">@ufospecial</a>
     </div>
 </body>
 </html>
